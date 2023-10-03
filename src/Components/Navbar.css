@@ -1,0 +1,34 @@
+.navbar {
+  background: white;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+  height: 80px;
+  background: rgb(0, 41, 102);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  clip-path: inset(33px 9px 65px 14px);
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+}
+.nav-item a.active {
+  color: rgb(147 197 253);
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgb(147 197 253);
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgb(147 197 253);
+}
