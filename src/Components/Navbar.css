@@ -1,4 +1,21 @@
 .navbar {
+  transition: all 0.5s ease-in-out;
+  /* height: 80px; */
+  background: rgb(0, 41, 102);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.nav-ite .active {
+  color: rgb(147 197 253);
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(147 197 253);
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(147 197 253);
+}
+/* .navbar {
   background: white;
 }
 
@@ -32,3 +49,4 @@
   padding-bottom: 12px;
   border-bottom: 2px solid rgb(147 197 253);
 }
+/*  */

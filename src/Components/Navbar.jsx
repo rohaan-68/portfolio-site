@@ -1,25 +1,72 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import './styles.css';
+// import './styles.css';
 import './Navbar.css';
 import logo from './logo.jpg';
 import navlogo from './navlogo.png';
-
 const Navbar = () => {
-  const [navbar, setNavbarColor] = useState(false);
+  const navigation = [
+    {
+      name: 'home',
+      href: 'home',
+    },
+    {
+      name: 'about',
+      href: 'about',
+    },
+    {
+      name: 'skills',
+      href: 'skills',
+    },
+    {
+      name: 'portfolio',
+      href: 'portfolio',
+    },
+    {
+      name: 'services',
+      href: 'services',
+    },
+    {
+      name: 'contact',
+      href: 'contact',
+    },
+  ];
 
-  const scroll = () => {
-    if (window.scrollY >= 50) {
-      setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
-    }
-  };
+  // const [navbar, setNavbarColor] = useState(false);
 
-  window.addEventListener('scroll', scroll);
+  // const scroll = () => {
+  //   if (window.scrollY >= 50) {
+  //     setNavbarColor(true);
+  //   } else {
+  //     setNavbarColor(false);
+  //   }
+  // };
+  // window.addEventListener('scroll', scroll);
 
   return (
-    <div
+    <nav>
+      <ul className="flex space-x-8 font-josefin capitalize text-[16px]">
+        {navigation.map((item, index) => {
+          return (
+            <li
+              className="text-white hover:text-blue-300 cursor-pointer nav-ite"
+              key={index}
+            >
+              <Link
+                to={item.href}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-item"
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      {/* <div
       className={`${
         navbar ? 'navbar' : ''
       } fixed w-full text-white md:px-[7%] lg:px-[17%] z-50`}
@@ -112,8 +159,12 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
+// };
 const Header = () => {
   return <Navbar />;
 };
-export default Header;
+export default Header; */}
+    </nav>
+  );
+};
+export default Navbar;
