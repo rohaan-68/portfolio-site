@@ -92,7 +92,7 @@ const Footer = () => {
       <hr class="sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1100px] md:mt-[-30px] mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 
       {/* <div className="w-[80%] h-[0.1px] mt-[-30px] mx-auto bg-blue-500"></div> */}
-      <p className="mt-6 pb-5 text-center text-gray-400 md:w-[500px] font-poppin text-[14px] sm:text-[15px] mx-auto tracking-[0.5px] xl:font-[500]">
+      <p className="mt-6 pb-5 text-center text-gray-400 md:w-[500px] font-poppin text-[13px] sm:text-[15px] mx-auto tracking-[0.5px] xl:font-[500]">
         &copy; 2023 Muhammad Rohaan. All rights reserved.
       </p>
     </footer>
